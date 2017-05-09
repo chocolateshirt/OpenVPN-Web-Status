@@ -1,3 +1,10 @@
 # OpenVPN-Web-Status
 
-A PHP based OpenVPN Web Status. This is a fork from Pablo Hoffman (http://pablohoffman.com/openvpn-web-status-php)
+A PHP based OpenVPN web status to monitor active OpenVPN connection.
+
+# Installation
+
+Add this line on OpenVPN server configuration:
+management localhost 7505
+
+Then restart your OpenVPN service
