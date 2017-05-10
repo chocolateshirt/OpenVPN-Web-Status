@@ -6,6 +6,6 @@ A PHP based OpenVPN web status to monitor active OpenVPN connection.
 
 Add this line on OpenVPN server configuration:
 ```
-management localhost 7505
+management localhost 5555
 ```
 Then restart your OpenVPN service
