@@ -1,9 +1,8 @@
 <?php
-
 // Configuration values --------
 $vpn_name = "VPN Status";
 $vpn_host = "127.0.0.1";
-$vpn_port = 7505;
+$vpn_port = 5555;
 // -----------------------------
 
 $fp = fsockopen($vpn_host, $vpn_port, $errno, $errstr, 30);
@@ -44,8 +43,8 @@ $clines[$routedata[2]]));
     }
 }
 
-$headers = array('VPN Address', 'Name', 'Real Address', 'Last Act', 
-'Recv', 'Sent', 'Connected Since');
+$headers = array('VPN Address', 'Name', 'Real Address', 'Last Active', 
+'Received', 'Sent', 'Connected Since');
 $tdalign = array('left', 'left', 'left', 'left', 'right', 'right', 
 'left');
 /* DEBUG
